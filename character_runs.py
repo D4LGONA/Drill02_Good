@@ -8,11 +8,15 @@ character = load_image('character.png')
 
 def run_circle():       # pass 일단 써놓기
     print('circle')
-    clear_canvas_now()
-    grass.draw_now(400, 30)
-    character.draw_now(400, 90)
-    delay(1)
-    pass
+    
+    cx, cy, r = 800 / 2, 600 / 2, 200 # 이런 식의 표현이 좋음
+    for deg in range(0, 360, 5):
+        x = cx + r * math.cos(math.radians(deg))
+        y = cy + r * math.sin(math.radians(deg))
+        clear_canvas_now()
+        grass.draw_now(400, 30)
+        character.draw_now(x, y)
+        delay(0.01)
 
 def run_rectangle():
     print('rectangle')
