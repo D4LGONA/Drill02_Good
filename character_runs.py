@@ -16,15 +16,23 @@ def run_circle():       # pass 일단 써놓기
         clear_canvas_now()
         grass.draw_now(400, 30)
         character.draw_now(x, y)
-        delay(0.01)
+        delay(0.1)
 
 def run_rectangle():
     print('rectangle')
-    pass
+
+    # bottom line
+    for x in range(50, 750 + 1, 10):
+        clear_canvas_now()
+        grass.draw_now(400, 30)
+        character.draw_now(x, 90)
+        delay(0.1)
+
+    
 
 while True:
-    run_circle()        # 함수를 먼저 만들고 내용을 만들 것
-    run_rectangle()     
+    #run_circle()        # 함수를 먼저 만들고 내용을 만들 것
+    run_rectangle()     # 테스트하기 쉽게 하려고 함수를 따로 뺌 주석처리 하고 테스트할 것
     break               # break를 써서 우선 제대로 되는지 확인
 
 
