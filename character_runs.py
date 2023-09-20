@@ -26,16 +26,17 @@ def run_rectangle():
     print('rectangle')
 
     # bottom line
-    for x in range(50, 750 + 1, 10):
-        render_all(x, 90)
+    # for x in range(50, 750 + 1, 10):
+    #     render_all(x, 90)
     
-    # for x in range(750, 50, -10):
-    #     render_all(x, )
+    # top line
+    for x in range(750, 50 - 1, -10): # 문법적인 기능을 확인하기 위해서 IDLE에서 확인함.
+        render_all(x, 550)
 
     
 
 while True:
-    run_circle()        # 함수를 먼저 만들고 내용을 만들 것
+    #run_circle()        # 함수를 먼저 만들고 내용을 만들 것
     run_rectangle()     # 테스트하기 쉽게 하려고 함수를 따로 뺌 주석처리 하고 테스트할 것
     break               # break를 써서 우선 제대로 되는지 확인
 
