@@ -29,6 +29,10 @@ def run_rectangle():
     # for x in range(50, 750 + 1, 10):
     #     render_all(x, 90)
     
+    # right line
+    for y in range(90, 550, 10):
+        render_all(750, y)
+
     # top line
     for x in range(750, 50 - 1, -10): # 문법적인 기능을 확인하기 위해서 IDLE에서 확인함.
         render_all(x, 550)
