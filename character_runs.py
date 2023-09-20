@@ -44,7 +44,7 @@ def run_rectangle():
 while True:
     run_circle()        # 함수를 먼저 만들고 내용을 만들 것
     run_rectangle()     # 테스트하기 쉽게 하려고 함수를 따로 뺌 주석처리 하고 테스트할 것
-    break               # break를 써서 우선 제대로 되는지 확인
+    #break              # break를 써서 우선 제대로 되는지 확인
 
 
 close_canvas()
