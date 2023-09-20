@@ -8,6 +8,10 @@ character = load_image('character.png')
 
 def run_circle():       # pass 일단 써놓기
     print('circle')
+    clear_canvas_now()
+    grass.draw_now(400, 30)
+    character.draw_now(400, 90)
+    delay(1)
     pass
 
 def run_rectangle():
